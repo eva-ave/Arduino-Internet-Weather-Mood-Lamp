@@ -1,5 +1,5 @@
 int ledPin = 13; //LED connected to digital pin 13
-int val = 0;
+String val = "";
 
 void setup()
 {
@@ -10,7 +10,7 @@ void setup()
 void loop()
 {
    val = Serial.read();
-   if (val == 'A')
+   if (val == "65")
    {  
      digitalWrite(ledPin, HIGH); //LED turns on
    }

@@ -10,5 +10,8 @@ myPort = new Serial(this, Serial.list()[0], 9600);
 }
 
 void draw() {
-myPort.write(65);
+String[] text = new String[1];
+text = loadStrings("https://eva-ave.github.io/lights/LED.txt"); //reads text on the url
+int textToInt = int(text[0]);
+myPort.write(textToInt); //sends "A" to the port
 }

@@ -11,7 +11,7 @@ void loop()
 
 {
  val = Serial.read();
- if (val >200){
+ if (val >245){
    
    digitalWrite(ledPin, HIGH); //LED turns on
  }

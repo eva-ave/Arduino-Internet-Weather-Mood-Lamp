@@ -6,7 +6,7 @@ Serial myPort;
 void setup() {
 //List all available serial ports:
 println(Serial.list());
-myPort = new Serial(this, Serial.list()[1], 9600);
+myPort = new Serial(this, Serial.list()[0], 9600);
 }
 
 void draw() {
