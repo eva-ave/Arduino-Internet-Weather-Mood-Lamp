@@ -8,3 +8,5 @@ Things you'll need:
 4. wires
 5. Processing software
 6. Weather API (I'm living in Singapore, so naturally, I'll be using the SG weather API. Feel free to accomodate to your location's weather API!)
+
+(will be updated again soon! :)
