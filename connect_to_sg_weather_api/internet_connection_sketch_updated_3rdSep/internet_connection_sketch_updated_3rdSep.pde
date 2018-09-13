@@ -16,11 +16,29 @@ JSONObject weatherDataPage = loadJSONObject("https://api.data.gov.sg/v1/environm
 JSONArray itemArr = weatherDataPage.getJSONArray("items");
 JSONObject innerItemObj = itemArr.getJSONObject(0);
 JSONArray readingsArr = innerItemObj.getJSONArray("readings");
-JSONObject stationInfo = readingsArr.getJSONObject(1);
-float weatherValue = stationInfo.getFloat("value");
+int arrSize = readingsArr.size();
+float weatherValue = 0.0;
+
+// the following for loop is to determine the size of the array
+
+
+
+for( int i = 0; i < arrSize ; i++)
+{
+  JSONObject stationInfo = readingsArr.getJSONObject(i);
+  String stationIdCheck = stationInfo.getString("station_id");
+
+  if( stationIdCheck.equals("S104"))
+  {
+    weatherValue = stationInfo.getFloat("value");
+    break;
+  }
+
+}
+
 println(weatherValue);
 
-int weatherValue2 = round(weatherValue*10);
+int weatherValue2 = round(weatherValue);
 println(weatherValue2);
 myPort.write(weatherValue2);
 

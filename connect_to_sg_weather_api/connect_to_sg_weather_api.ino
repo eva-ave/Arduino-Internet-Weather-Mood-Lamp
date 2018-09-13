@@ -8,12 +8,10 @@ void setup()
 }
 
 void loop()
-
 {
  val = Serial.read();
- if (val>245){
+ if (val==32){
    
    digitalWrite(ledPin, HIGH); //LED turns on
  }
-
 }
