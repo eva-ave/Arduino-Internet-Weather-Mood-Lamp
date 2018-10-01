@@ -9,4 +9,4 @@ Things you'll need:
 5. Processing software
 6. Weather API (I'm living in Singapore, so naturally, I'll be using the SG weather API. Feel free to accomodate to your location's weather API!)
 
-(will be updated again soon! :)
+(This is still an ongoing project(as of Oct 2018). I will update here again soon! :)
