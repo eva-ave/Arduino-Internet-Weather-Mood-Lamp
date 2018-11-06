@@ -189,10 +189,16 @@ chase( strip.Color(0, 0, 255) );  //dark blue
 
 This is the simplest part. I am using a neopixel, which really is just a series of RGB LEDS on a strip. You could of course use a simple RGB LED too. But I think neopixels are cooler XD. Do note that if you are using a neopixel and it has four pads on it, you'll only need to solder wires to three of them which is the ground, V-out and the V-in. 
 
-![alt text](eva-ave/Arduino-Internet-Weather-Mood-Lamp/images_for_read.me/neopixel_circuit_schematic.png "Hooking up my neopixels to my arduino board")
+![alt text](https://github.com/eva-ave/Arduino-Internet-Weather-Mood-Lamp/blob/master/images_for_read.me/neopixel_circuit_schematic.PNG "Hooking up my neopixels to my arduino board")
 
 ## 5. Ta-da!
 Take note here that the sequence you run the two codes here is important. First, the arduino code, then the processing code.
 
 ## Moving on from here
-Nope my project is still ongoing. There are still areas of improvement. For example, to provide the arduino uno board constant internet access when it is not connected to the laptop. Not too sure how yet, but I'll start hacking a way soon! Do watch this space if you're interested! :)
+A project always has areas of improvement. My next goal is to provide the arduino uno board constant internet access even when it is not connected to the laptop. Not too sure how yet, but I'll start hacking a way soon! Do watch this space if you're interested! :)
+
+### Many Thanks to:
+1. The Makers' community at my internship company Autodesk for providing the mini neopixel XD
+2. An inspiration from an online article that I cannot find now :(
+
+Cheers! XD
