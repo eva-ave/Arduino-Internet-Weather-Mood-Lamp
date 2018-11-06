@@ -18,7 +18,7 @@ Things you'll need:
 
 What you need is a webpage that contains relevant weather information. Lucky for me, I'm living in Singapore and with the courtesy of the National Environment Agency(NEA) I am using their free weather API. [Their API](https://api.data.gov.sg/v1/environment/air-temperature) has temperatures recorded at the several weather stations in Singapore that is accurate by the minute.
 
-![alt text](images_for_read.me/api_screenshot.png "Singapore is a small place, really :)")
+![alt text](eva-ave/Arduino-Internet-Weather-Mood-Lamp/images_for_read.me/api_screenshot.png "Singapore is a small place, really :)")
 
 ## 2. Write a Processing code to parse the information on the webpage
 
@@ -189,7 +189,7 @@ chase( strip.Color(0, 0, 255) );  //dark blue
 
 This is the simplest part. I am using a neopixel, which really is just a series of RGB LEDS on a strip. You could of course use a simple RGB LED too. But I think neopixels are cooler XD. Do note that if you are using a neopixel and it has four pads on it, you'll only need to solder wires to three of them which is the ground, V-out and the V-in. 
 
-![alt text](images_for_read.me/neopixel_circuit_schematic.png "Hooking up my neopixels to my arduino board")
+![alt text](eva-ave/Arduino-Internet-Weather-Mood-Lamp/images_for_read.me/neopixel_circuit_schematic.png "Hooking up my neopixels to my arduino board")
 
 ## 5. Ta-da!
 Take note here that the sequence you run the two codes here is important. First, the arduino code, then the processing code.
