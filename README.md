@@ -18,7 +18,7 @@ Things you'll need:
 
 What you need is a webpage that contains relevant weather information. Lucky for me, I'm living in Singapore and with the courtesy of the National Environment Agency(NEA) I am using their free weather API. [Their API](https://api.data.gov.sg/v1/environment/air-temperature) has temperatures recorded at the several weather stations in Singapore that is accurate by the minute.
 
-![alt text](eva-ave/Arduino-Internet-Weather-Mood-Lamp/images_for_read.me/api_screenshot.png "Singapore is a small place, really :)")
+![alt text](https://github.com/eva-ave/Arduino-Internet-Weather-Mood-Lamp/blob/master/images_for_read.me/api_screenshot.PNG "Singapore is a small place, really :)")
 
 ## 2. Write a Processing code to parse the information on the webpage
 
