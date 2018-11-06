@@ -13,7 +13,7 @@
  
 #define PIN 6
 #define N_LEDS 8
-#define BRIGHTNESS 5
+#define BRIGHTNESS 50
 
 int val = 0;
  
@@ -73,6 +73,8 @@ void loop() {
   { 
     chase( strip.Color(25, 0, 0) );  //dim red
   }
+
+  delay(50);
 }
  
 static void chase(uint32_t c) {

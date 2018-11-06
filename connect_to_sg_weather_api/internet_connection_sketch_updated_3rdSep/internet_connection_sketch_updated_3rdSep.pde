@@ -19,16 +19,14 @@ void draw()
   int arrSize = readingsArr.size();
   float weatherValue = 0.0;
   int decimalInt = 10;
+  
   // the following for loop is to determine the size of the array
-  
-  
-  
   for( int i = 0; i < arrSize ; i++)
   {
     JSONObject stationInfo = readingsArr.getJSONObject(i);
     String stationIdCheck = stationInfo.getString("station_id");
   
-    if( stationIdCheck.equals("S104"))
+    if( stationIdCheck.equals("S60"))
     {
       weatherValue = stationInfo.getFloat("value");
       break;
