@@ -83,7 +83,7 @@ This is the next real deal. myPort.write() is the built-in function that sends t
 
 ### 2.1 Going into the nitty-gritty of my Processing code
 
-```
+```java
 void setup() 
 {
   //List all available serial ports:
@@ -94,7 +94,7 @@ void setup()
 
 In the setup() function, what I'm doing is listing the ports that are in use in the form of an array. Then, depending of which port you are using, assign the specific index of the array to myPort. For example, if COM1 and COM4 gets printed respectively, and your arduino is connected to COM1, that means COM1 is the first index of the array, and thus the '0' index above. (I won't go into the specifics of how to know which port your arduino is connected to... just google it.)
 
-```
+```java
   JSONObject weatherDataPage = loadJSONObject("https://api.data.gov.sg/v1/environment/air-temperature"); //reads text on the url;
   JSONArray itemArr = weatherDataPage.getJSONArray("items");
   JSONObject innerItemObj = itemArr.getJSONObject(0);
@@ -104,7 +104,7 @@ In the setup() function, what I'm doing is listing the ports that are in use in 
 As mentioned, the first line opens up the webpage and I assign this webpage to the JSONObject variable weatherDataPage. 
 In the second line, I access the "items" array and assign it to JSONArray variable itemArr. In the third line, I'm accessing the first element of the "items" array (which essentially only has one element if you look closely). The first element has 2 objects, "timestamp" and "readings". In the next line, I then access "readings" object and assign it to readingsArr variable.
 
-```
+```java
   for(int i = 0; i < arrSize ; i++)
   {
     JSONObject stationInfo = readingsArr.getJSONObject(i);
