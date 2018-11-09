@@ -18,7 +18,130 @@ Things you'll need:
 
 What you will need is a webpage that contains relevant weather information. Lucky for me, I have access to [the free weather API](https://api.data.gov.sg/v1/environment/air-temperature) in my country(I am living in Singapore) courtesy of the National Environment Agency(NEA). It has temperatures recorded at the several weather stations around Singapore and is accurate by the minute.
 
-![alt text](https://github.com/eva-ave/Arduino-Internet-Weather-Mood-Lamp/blob/master/images_for_read.me/api_screenshot.PNG "Singapore is a small and awesome place, really :)")
+```json
+{
+  "metadata": {
+    "stations": [
+      {
+        "id": "S109",
+        "device_id": "S109",
+        "name": "Ang Mo Kio Avenue 5",
+        "location": {
+          "latitude": 1.3764,
+          "longitude": 103.8492
+        }
+      },
+      {
+        "id": "S117",
+        "device_id": "S117",
+        "name": "Banyan Road",
+        "location": {
+          "latitude": 1.256,
+          "longitude": 103.679
+        }
+      },
+      {
+        "id": "S50",
+        "device_id": "S50",
+        "name": "Clementi Road",
+        "location": {
+          "latitude": 1.3337,
+          "longitude": 103.7768
+        }
+      },
+      {
+        "id": "S107",
+        "device_id": "S107",
+        "name": "East Coast Parkway",
+        "location": {
+          "latitude": 1.3135,
+          "longitude": 103.9625
+        }
+      },
+      {
+        "id": "S108",
+        "device_id": "S108",
+        "name": "Marina Gardens Drive",
+        "location": {
+          "latitude": 1.2799,
+          "longitude": 103.8703
+        }
+      },
+      {
+        "id": "S44",
+        "device_id": "S44",
+        "name": "Nanyang Avenue",
+        "location": {
+          "latitude": 1.34583,
+          "longitude": 103.68166
+        }
+      },
+      {
+        "id": "S121",
+        "device_id": "S121",
+        "name": "Old Choa Chu Kang Road",
+        "location": {
+          "latitude": 1.37288,
+          "longitude": 103.72244
+        }
+      },
+      {
+        "id": "S111",
+        "device_id": "S111",
+        "name": "Scotts Road",
+        "location": {
+          "latitude": 1.31055,
+          "longitude": 103.8365
+        }
+      }
+    ],
+    "reading_type": "DBT 1M F",
+    "reading_unit": "deg C"
+  },
+  "items": [
+    {
+      "timestamp": "2018-11-09T17:20:00+08:00",
+      "readings": [
+        {
+          "station_id": "S109",
+          "value": 28
+        },
+        {
+          "station_id": "S117",
+          "value": 27.9
+        },
+        {
+          "station_id": "S50",
+          "value": 27.8
+        },
+        {
+          "station_id": "S107",
+          "value": 28.1
+        },
+        {
+          "station_id": "S108",
+          "value": 28.4
+        },
+        {
+          "station_id": "S44",
+          "value": 27.8
+        },
+        {
+          "station_id": "S121",
+          "value": 28.4
+        },
+        {
+          "station_id": "S111",
+          "value": 27.4
+        }
+      ]
+    }
+  ],
+  "api_info": {
+    "status": "healthy"
+  }
+}
+```
 
 If you decide to use the same webpage as I do, do note though, that the data provided can be quite unstable. At some minutes, the data from a specific weather station may not be available. Keep refreshing the page every minute and you'll see what I mean. In that case, you might want to conside an edge case in your code.
 
